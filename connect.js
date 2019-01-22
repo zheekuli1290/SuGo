@@ -7,4 +7,3 @@ let db = new sqlite3.Database('./SuGo.db', sqlite3.OPEN_READWRITE, (err) => {
   }
   console.log('Connected to the SuGo database.');
 });
- 
