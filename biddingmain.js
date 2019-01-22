@@ -3,10 +3,11 @@ const startbid = require('./startingbid');
 const finalbid = require('./finalbid');
 const delbid = require('./deletebid');
 
-var taskid = 2;
-var userid = 3;
+var taskid = 12;
+var userid = 12;
+var bidid = 17;
 var startamount = 300;
-var finalamout = 500;
+var finalamount = 500;
 var start = startbid.insertstart;
 var gettask = startbid.gettask;
 var final = finalbid.insertfinal;
@@ -16,3 +17,6 @@ function print(name){
 }
 // gettask(taskid,print); uncomment if naa na ang task nga module
 start(userid,taskid,startamount,print);
+if(bidid == 17){
+final(bidid,finalamount,print);
+}

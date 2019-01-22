@@ -3,7 +3,7 @@ const con = require('./connect');
 var db = con.db;
 module.exports = {
 insertstart: function (userid, taskid, startbid, callback){
-let sqlbid = 'INSERT INTO Bid(user_id,task_id,starting_amount,date_submitted) VALUES (?,?,?)';
+let sqlbid = 'INSERT INTO Bid(user_id,task_id,starting_amount) VALUES (?,?,?)';
 db.run(sqlbid,[userid,taskid,startbid], function(err, rows){
     if(err){
         return console.error(err.message);
