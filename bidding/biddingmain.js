@@ -3,7 +3,8 @@ const startbid = require('./startingbid');
 const finalbid = require('./finalbid');
 const delbid = require('./deletebid');
 
-var taskid = 12;
+// dummy values ang taskid - finalamount
+var taskid = 12; 
 var userid = 12;
 var bidid = 17;
 var startamount = 300;
