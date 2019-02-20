@@ -4,20 +4,24 @@ const finalbid = require('./finalbid');
 const delbid = require('./deletebid');
 
 // dummy values ang taskid - finalamount
-var taskid = 12; 
-var userid = 12;
-var bidid = 17;
-var startamount = 300;
-var finalamount = 500;
-var start = startbid.insertstart;
-var gettask = startbid.gettask;
-var final = finalbid.insertfinal;
-var del = delbid.deletebid;
+var bidobj = {
+ taskid : 14, 
+ userid : 15,
+ bidid : 22,
+ startamount : 300,
+ finalamount : 500,
+ start : startbid.insertstart,
+ gettask : startbid.gettask,
+ final : finalbid.insertfinal,
+ del : delbid.deletebid
+}
 function print(name){
   console.log(name);
 }
 // gettask(taskid,print); uncomment if naa na ang task nga module
-start(userid,taskid,startamount,print);
-if(bidid == 17){
-final(bidid,finalamount,print);
+bidobj.start(bidobj.userid,bidobj.taskid,bidobj.startamount,print);
+if(bidobj.bidid == 22){
+bidobj.final(bidobj.bidid,bidobj.startamount,print);
 }
+
+console.log('Success!');
